@@ -355,6 +355,7 @@ section {
 .about .content ul {
   list-style: none;
   padding: 0;
+  white-space: nowrap;
 }
 
 .about .content ul li {
@@ -373,6 +374,7 @@ section {
   margin-right: 5px;
   color: #149ddd;
   line-height: 0;
+  white-space: nowrap;
 }
 
 .about .content p:last-child {
