@@ -377,6 +377,11 @@ section {
   white-space: nowrap;
 }
 
+@media (max-width: 768px) {
+  .about .content ul li span {
+    white-space: normal; /* Permite que el texto se envuelva en pantallas pequeñas */
+  }
+}
 .about .content p:last-child {
   margin-bottom: 0;
 }
