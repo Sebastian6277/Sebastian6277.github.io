@@ -352,17 +352,17 @@ section {
   color: #173b6c;
 }
 
-.about .content ul {
+about .content ul {
   list-style: none;
   padding: 0;
-  white-space: nowrap;
+  white-space: normal; /* Permite el ajuste de texto */
 }
 
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  white-space: nowrap;
+  white-space: normal; /* Permite el ajuste de texto */
 }
 
 .about .content ul strong {
@@ -374,14 +374,24 @@ section {
   margin-right: 5px;
   color: #149ddd;
   line-height: 0;
-  white-space: nowrap;
+  white-space: normal; /* Permite el ajuste de texto */
 }
 
-@media (max-width: 768px) {
-  .about .content ul li span {
-    white-space: normal; /* Permite que el texto se envuelva en pantallas pequeñas */
+/* En pantallas grandes, puedes restaurar el comportamiento nowrap si es necesario */
+@media (min-width: 768px) {
+  .about .content ul {
+    white-space: nowrap;
+  }
+
+  .about .content ul li {
+    white-space: nowrap;
+  }
+
+  .about .content ul i {
+    white-space: nowrap;
   }
 }
+
 .about .content p:last-child {
   margin-bottom: 0;
 }
